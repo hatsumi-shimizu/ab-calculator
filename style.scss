@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+* {
+  font-family: "ヒラギノ丸ゴ Pro";
+}
+
+body {
+  background-color: #ffe7e0;
+}
+
+header {
+  background-color: #f09ea9;
+  color: white;
+  height: 70px;
+  box-shadow: 0 5px 0 #DB8994;
+  border-radius: 0px 0px 3px 3px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 28px;
+    font-family: "ヒラギノ丸ゴ Pro";
+    letter-spacing: 3px;
+    padding-top: 20px;
+    margin-left: 15px;
+  }
+}
+
+main {
+  margin: 80px;
+}
+
+table {
+  text-align: center;
+  font-family: "ヒラギノ丸ゴ Pro";
+  text-align: center;
+}
+
+#table-wrapper {
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+td {
+  width: 20%;
+}
+
+.id {
+  width: 5%;
+}
+
+.btns {
+  margin-top: 2px;
+  background-color: #f09ea9;
+  color: white;
+  padding: 8px 15px;
+  border: solid 1px #f09ea9;
+  box-shadow: 0 5px 0 #DB8994;
+  border-radius: 7px;
+  
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(5px);
+  }
+}
+
+.btn:active {
+  background-color: #f09ea9;
+  color: white;
+}
+
+.form-control {
+  margin-top: 1px;
+}
+
+#bottom-parts {
+  display: flex;
+  justify-content: space-between;
+}
+
+#result {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #9F9494;
+  height: 100px;
+  background: #fbf3ef;
+  top: 80px;
+}
+
+#result #result-title {
+  position: absolute;
+  display: inline-block;
+  top: -42px;
+  left: -3px;
+  padding: 8px 0px 0px 20px;
+  height: 39px;
+  width: 88px;
+  line-height: 25px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  background: #9F9494;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+#result-title {
+  font-size: 16px;
+}
+
+#message {
+  background-color: #fbf3ef;
+  color: #857A7B;
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f09ea9;
+  height: 70px;
+  box-shadow: 0px -5px 0px #DB8994; /* 上方向にだけbox-shadowをつける */
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: white;
+
+  p {
+    font-family: "ヒラギノ丸ゴ Pro";
+    letter-spacing: 3px;
+    font-size: 13px;
+    padding: 25px;
+    text-align: right;
+  }
+}
+
+#copyright {
+  padding-right: 5px;
+}
+
+#how-to-btn {
+  border: solid 1.5px white;
+  color: white;
+  margin-top: 17px;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+
+  &:hover {
+    color: #f09ea9;
+    background-color: white;
+    transition: all 0.3s;
+  }
+}
+
+svg {
+  position: relative;
+  top: -1.6px;
+  height: 18px;
+  width: 18px;
+}
+
+// show.php開始
+#show-header {
+  display: block;
+}
+
+#show-heading {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding-top: 5px;
+}
+
+#show-footer {
+  margin-top: 0px;
+}
+
+#show-main-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 1100px;
+}
+
+#show-main-container {
+  background-color: #FCF3F0;
+  width: 60%;
+  color: black;
+  height: 850px;
+  margin: 130px auto;
+	position: relative;
+}
+
+#show-main-container::before {
+	position: absolute;
+	content: "";
+	width: 95%;
+	height: 10px;
+	top: 0.5em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	border-top: dotted 10px #ffe7e0; /*ドットの形・大きさ・色*/
+}
+
+#heading-except {
+  padding-top: 20px;
+}
+
+h3 {
+  padding-left: 130px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #5CB8B4;
+  font-weight: bold;
+}
+
+.explanation {
+  line-height: 25px;
+  margin-left: 120px;
+}
+
+.txt {
+  margin-top: 40px;
+}
+
+.svg-heading {
+  color: #5CB8B4;
+}
+
+.show-table-wrapper {
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.meaning {
+  text-align: left;
+}
+
+.download {
+  background-color: #75C4C0;
+  box-shadow: 0 5px 0 #5CB8B4;
+  border: solid 1px #75C4C0;
+}
