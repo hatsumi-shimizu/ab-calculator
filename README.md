@@ -9,7 +9,9 @@
 - Bootstrap
 
 # リポジトリのクローン
+```
 git clone https://github.com/hatsumi-shimizu/ab-calculator.git
+```
 
 # 実行環境
 - MAMPを利用しました。
